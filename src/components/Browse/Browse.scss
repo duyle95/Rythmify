@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+@import "../../constants/constants.scss";
+
+.browse {
+  background: linear-gradient(
+    -37deg,
+    $background-color-from 0%,
+    $background-color-to 51%,
+    $background-color-to 100%
+  );
+  background-attachment: fixed;
+  min-height: 100vh;
+  text-align: center;
+  padding-top: 20px;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+.browse__title {
+  font-family: "Quicksand", sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+}
+.genres {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.genre {
+  text-align: center;
+  margin: 0 20px;
+}
+.genre__info {
+  // margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.genre__image,
+.genre__info p {
+  cursor: pointer;
+}
+
+.genre__info p {
+  display: inline;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  line-height: 3rem;
+}

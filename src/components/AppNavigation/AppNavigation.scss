@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+$nav-color: #060505;
+$nav-link-color: #44FFD1;
+$tablet-mobile-screen: 768px;
+.navigation {
+    height: 100%;
+    width: 120px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $nav-color;
+    overflow-x: hidden;
+    padding-top: 30px;
+}
+
+.navigation__link--logo {
+    padding: 8px 8px 8px 20px;
+}
+
+.navigation__link--logo img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 70px;
+}
+
+.navigation__link {
+    font-family: 'Quicksand', sans-serif;
+    padding: 8px 8px 8px 30px;
+    margin-bottom: 50px;
+    text-decoration: none;
+    font-size: 18px;
+    color: $nav-link-color;
+    display: block;
+}
+
+.navigation__icon {
+    display: block;
+    padding-left: 18px;
+    padding-bottom: 10px;
+}
+
+@media only screen and (max-width: $tablet-mobile-screen) {
+    .navigation {
+        all: initial;
+        * {
+            all: unset;
+        }
+    }
+
+    .navigation__link--logo {
+        display: none
+    }
+
+    .navigation {
+        overflow: hidden;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 50px;
+        background-color: $nav-color;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .navigation__link {
+        color: $nav-link-color;
+        text-align: center;
+        text-decoration: none;
+        font-size: 15px;
+        font-family: 'Quicksand', sans-serif;
+        cursor: pointer;
+        padding-top: 20px;
+    }
+}

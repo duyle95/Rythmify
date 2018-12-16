@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+@import "../../constants/constants.scss";
+
+.user-playlists-container {
+  background: linear-gradient(
+    -37deg,
+    $background-color-from 0%,
+    $background-color-to 51%,
+    $background-color-to 100%
+  );
+  background-attachment: fixed;
+  min-height: 100vh;
+  text-align: center;
+}
+// 2292a4
+.user-playlists__header {
+  color: #060505;
+  display: block;
+  font-family: "Quicksand", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 3rem;
+  margin-bottom: 2rem;
+  padding-top: 1rem;
+}
+// $button-color-from: #f9e784;
+// $button-color-to: #e58f65;
+// $button-text-color: #281f1d;
+.user-playlists__button {
+  background-image: linear-gradient(
+    to bottom,
+    $button-color-from 0%,
+    $button-color-to 100%
+  );
+  border: none;
+  border-radius: 12px;
+  color: $button-text-color;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 2em;
+  align-self: flex-end;
+  font-family: "Quicksand", sans-serif;
+}
+.user-playlists__list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.user-playlists-item {
+  text-align: center;
+  margin: 0 20px;
+  cursor: pointer;
+}
+// .user-playlists__modal {
+// background-color: #bdbf09;
+// }
+.user-playlists__input {
+  font-size: 25px;
+  line-height: 42px;
+  letter-spacing: -0.005em;
+  font-weight: 600;
+  // color: #fff;
+  text-transform: none;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  width: 80%;
+}
+.user-playlists__button-group--horizontal {
+  display: flex;
+  justify-content: center;
+  padding: 28px 0;
+}
+.user-playlists__button-group-item {
+  padding: 0 5px;
+}
+.user-playlists__button--cancel {
+  background: rgba(24, 24, 24, 0.7);
+  border: none;
+  border-radius: 12px;
+  color: #fff;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 2em;
+  align-self: flex-end;
+  font-family: "Quicksand", sans-serif;
+}
+.user-playlists__button--create {
+  background-image: linear-gradient(
+    to bottom,
+    $button-color-from 0%,
+    $button-color-to 100%
+  );
+  border: none;
+  border-radius: 12px;
+  color: $button-text-color;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 2em;
+  align-self: flex-end;
+  font-family: "Quicksand", sans-serif;
+}

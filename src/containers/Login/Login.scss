@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+@import "../../constants/constants.scss";
+
+// $button-color-from: #F9E784;
+// $button-color-to: #E58F65;
+// $button-text-color: #281F1D;
+
+.login {
+  height: 100vh;
+  text-align: center;
+}
+
+.login__background-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+  // Photo by Aditya Chinchure on Unsplash
+  background-image: url("../../assets/images/login-background4.jpg");
+  min-height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login__content {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.login__button {
+  // background-image: linear-gradient(to bottom, #D1CCDC 0%, #424C55 100%);
+  background-image: linear-gradient(
+    to bottom,
+    $button-color-from 0%,
+    $button-color-to 100%
+  );
+  border: none;
+  border-radius: 12px;
+  color: $button-text-color;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 4em;
+  align-self: flex-end;
+  font-family: "Quicksand", sans-serif;
+}
+
+@media only screen and (max-width: 414px) {
+  .login__button {
+    margin-bottom: 5em;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .login__button {
+    margin-bottom: 7em;
+  }
+}

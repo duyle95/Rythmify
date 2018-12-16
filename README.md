@@ -1,30 +1,39 @@
 # Rythmify
 
-This web app is just another long-lost brother of Spotify, utilize Spotify API.
+This web app is just another long-lost brother of Spotify, which utilizes Spotify API.
+
+http://duyn55-rythmify.surge.sh/
 
 ## Getting Started
 
+### Spotify API Scopes
+
+- Authorization
+- Browse(Genres and Moods)
+- Create a playlist
+- Add a track to playlist
+
 ### Prerequisites
 
-`NPM@6.x` and `NODE.JS@8.x`
+`npm@6.x` and `node@8.x`
 
 ### Installing
 
-Create a new App from https://developer.spotify.com/dashboard/.
+Create a new App from [Spotify Dashboard](https://developer.spotify.com/dashboard/).
 
 Add `localhost:3000/callback` as `Redirect URI`.
 
-Create `env.js` file at the root of the folder. Fill `Client Id` to this file.
-
-## Deployment
-
-Simple and Quick Deployment with Surge.
+Create `env.js` file at the root of the folder. Fill `REACT_APP_SPOTIFY_CLIENT_ID` with `Client ID` from app settings to this file.
 
 ## Built with
 
 - React Redux (Duck Modular)
 - Sass
 - BEM architecture
+
+## Deployment
+
+Deploy with Surge.
 
 ## Acknowledgements
 
